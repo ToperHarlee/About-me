@@ -1,0 +1,562 @@
+@import "vars";/* сюда записываются переменные */
+@import "libs";/* файл куда записываются библиотеки типа normalize итд */
+@import "fonts";/* файл со шрифтами */
+@import "global";
+
+
+
+
+.header{
+    background-color: #EEEFF1;
+    .logo-img{
+        font-size: 48px;
+        line-height: 60px;
+        color: #34547A;
+        font-family: 'Revalia', cursive;
+        
+    }
+    .header__top-box{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    }
+    .menu-list__item{
+        padding-left: 398px;
+        .menu-list__items{
+            display: inline-block;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 26px;
+            letter-spacing: 0.1em;
+            color: #34547A; 
+            padding: 0 40px 0 0;
+            .menu-items__link {
+                display: inline-block;
+                overflow: hidden;
+                &:before, &:after {
+                  right: 0;
+                  bottom: 0;
+                  background: $hover;
+                }
+                &:before {
+                  width: 100%;
+                  height: 2px;
+                  transform:  translateX(-100%);
+                }
+                &:after {
+                  width: 2px;
+                  height: 100%;
+                  transform:  translateY(100%);
+                }
+                > span {
+                  display: block;
+                  padding: 10px;
+                  &:before, &:after {
+                    left: 0;
+                    top: 0;
+                    background: $hover;
+                  }
+                  &:before {
+                    width: 100%;
+                    height: 2px;
+                    transform:  translateX(100%);
+                  }
+                  &:after {
+                    width: 2px;
+                    height: 100%;
+                    transform:  translateY(-100%);
+                  }
+                }
+                &:hover:before, &:hover:after, &:hover > span:before, &:hover > span:after {
+                  transform:  translate(0, 0);
+                }
+            }                     
+        }
+    }
+}
+
+.header__content-inner{
+  display: flex;
+  justify-content: center;
+  .header-content__image{
+      padding: 160px 130px 180px 165px;
+  }
+  .content__column{
+      padding: 122px 0 146px;
+      display: inline-block;
+      font-family: 'Roboto', sans-serif;  
+      text-align: left; 
+      .content__column-title{
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 79px;
+        color: #000000; 
+        margin-bottom: 60px;
+      }
+      .content__column-text{
+        width: 540px;
+        height: 67px;
+        font-size: 16px;
+        line-height: 26px;
+        color: #727272;
+        margin-bottom: 60px;
+      }
+
+   }
+}
+
+.about__me{
+    background-color: white;
+    text-align: center;
+    .about__me-inner{
+        padding: 126px 0 100px;
+        display: inline-block;
+    }
+    .about__me-title{
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 37px;
+        color: #000000;  
+        margin-bottom: 50px;     
+    }
+    .about__me-text{
+        font-size: 16px;
+        line-height: 26px;
+        color: #727272;
+        width: 540px;
+    }
+}
+
+.statistics{
+    background-color: #34547A;
+    .statistics__box{
+        display: flex;
+        justify-content: center;
+    }
+    .statistics__item{
+        display: flex;
+        padding: 100px 50px 100px 0;
+    }
+    .statistics__descr{
+        color: #FFFFFF;
+        display: inline-block;
+        text-align: left;
+        padding-left: 20px;
+        .statistics__descr-num{
+            font-weight: 500;
+            font-size: 21px;
+            line-height: 25px;
+            margin-bottom: 5px;        
+        }
+        .statistics__descr-name{
+            font-size: 16px;
+            line-height: 26px;
+        }
+    }
+}
+
+.my__skills-inner{
+    display: flex;
+    justify-content: center;
+    .skills__form-box{
+      padding: 204px 150px 192px 0;
+      display: inline-block;
+      text-align: left;
+    .form-box__title{
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 37px;
+        color: #000000;
+        margin-bottom: 50px;      
+      }
+    .progress__box-item{
+       max-width: 445px;
+    .progress__box-items{
+        margin-bottom: 15px;
+        .progress__box-name{
+            font-size: 16px;
+            line-height: 26px;
+            color: black;
+            margin-bottom: -10px;
+            }
+          }
+       }  
+    }
+}
+
+.my__skills{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.skills__image{
+    padding: 100px 0 100px;
+     
+.skills__image-bg{
+    width: 450px;
+    height: 450px;  
+    border-radius: 50%;
+ }
+}
+
+.video__content{
+    background: #EEEFF1;
+    .video__content-inner{
+        padding: 100px 0 57px;
+        max-width: 540px;
+        display: inline-block;
+        .video__content-title{
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 37px;
+            margin-bottom: 50px;
+        }
+        .video__content-text{
+            font-size: 16px;
+            line-height: 26px;
+            color: #727272;
+        }
+    }
+
+    .some__video{
+       width: 100%;
+       align-items: center;
+       padding-bottom: 100px;
+    }
+}
+
+/* .gallery{
+   .gallery__box{
+       display: flex;
+       justify-content: center;
+       overflow: hidden;
+       
+       img{
+           width: 480px;
+           height: 480px;
+           position: relative;
+       }
+       img:hover{
+        opacity: 0.5;
+        display: block;
+       } 
+   }
+    .logo-box__img{
+        padding: 72px 0 100px;
+    }
+} */
+ 
+.gallery{
+    .hover-image-5{
+        display: flex;
+    }
+    .hover-image-5 a {
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+        overflow: hidden;
+        height: auto;
+        text-align: center;
+        background: #bfe2ff;
+        
+      }
+      .hover-image-5 a img {
+        opacity: 1;
+        transition: opacity 0.5s;
+        position: relative;
+        width: 480px;
+        height: auto;
+        display: block;
+      }
+      .hover-image-5 a:hover img {
+        opacity: 0.5;
+      }
+      .hover-image-5 a div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      .hover-image-5 a div::before,
+      .hover-image-5 a div::after {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        bottom: 20px;
+        left: 20px;
+        content: "";
+        opacity: 0;
+        transition: opacity 0.5s, transform 0.5s;
+        pointer-events: none;
+      }
+      .hover-image-5 a div::before {
+        border-top: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        transform: scale(0, 1);
+      }
+      .hover-image-5 a div::after {
+        border-right: 2px solid #fff;
+        border-left: 2px solid #fff;
+        transform: scale(1, 0);
+      }
+      .hover-image-5 a:hover div::before,
+      .hover-image-5 a:hover div::after {
+        opacity: 1;
+        transform: scale(1);
+      }
+      .hover-image-5 div img,
+      .hover-image-5 div i {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -24px;
+        margin-left: -24px;
+        width: 48px;
+        height: 48px;
+        transition: transform 0.5s ease 0s;
+        transform: scale(0);
+        font-size: 48px;
+        color: #fff;
+      }
+      .hover-image-5 a:hover div img,
+      .hover-image-5 a:hover div i {
+        transform: scale(1);
+        opacity: 1;
+      }    
+}
+
+
+
+.feedback{
+    background-color: #EEEFF1;
+}
+.feedback__inner{
+    max-width: 1440px;
+    .feedback__title-box{
+        max-width: 540px;
+        display: inline-block;
+        padding: 100px 0 65px;
+        .feedback__inner-title{
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 37px;
+            margin-bottom: 50px;
+        }
+        .feedback__inner-text{
+            font-size: 16px;
+            line-height: 26px;
+            color: #727272;
+            margin-bottom: 65px;
+        }
+    }
+    .feedback__form-box{
+        .form__item{
+            .form__item-name{
+             width: 255px;
+             height: 50px;
+             text-align: center right;
+             padding: 17px 0 17px 20px;
+             background: #FFFFFF;
+             margin-right: 30px;
+            }
+            .form__item-email{
+                width: 255px;
+                height: 50px;
+                text-align: center right;
+                padding: 17px 0 17px 20px;
+                background: #FFFFFF;
+            }
+            
+        }
+        
+    }
+    .textarea__form-box{
+        display: inline-block;
+        .form__textarea{
+            width: 544px;
+            height: 175px;
+            resize: none;
+            margin: 20px 0 50px;
+            padding: 17px 0 0 20px;
+            display: block;
+        }
+        .form__btn{
+            width: 190px;
+            height: 55px;
+            margin-bottom: 100px;
+            font-size: 16px;
+            line-height: 26px;
+            letter-spacing: 0.1em;
+            color: #FFFFFF;
+            background-color: #34547A;
+            outline: none;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}
+
+.footer{
+    background-color: #34547A;;
+    .footer__container{
+    display: flex;
+    justify-content: space-between;
+    .footer__descr-box{
+        display: inline-block;
+        padding: 50px 0 50px 400px;
+        .descr__name{
+            font-weight: 500;
+            font-size: 21px;
+            line-height: 25px;  
+            margin-bottom: 20px;       
+        }
+        .descr__rights{
+            font-size: 13px;
+            line-height: 21px;
+            color: #FFFFFF;
+        }
+     }
+     .wrapper {
+        position: absolute;
+        padding-top: 148px;
+        transform: translate(-50%, -50%);
+        width: 550px;
+        left: 80%;
+      }
+      
+      /* Style the Un-order list by setting its list-style to none */
+      .wrapper ul {
+        list-style: none;
+      }
+      
+      /* Style the list items inside the UL list, by setting its width, height and line-height 
+        and float them to left and set its border and border-radius.
+       */
+      .wrapper ul li {
+        width: 75px;
+        height: 75px;
+        line-height: 75px;
+        margin: 0 10px;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 50%;
+        border: 5px solid #D8E2DC;
+        float: left;
+        transition: all 0.5s ease;
+      }
+      
+      /* Style the icons by setting its color and margin-top value to 20px 
+      to align it properly */
+      .wrapper ul li .fa {
+        color: #D8E2DC;
+        margin-top: 20px;
+        transition: all 0.5s ease;
+      }
+      
+      /* Now target the specific li classes for styling and use box-shadow effect to border and text-shadow effect
+        to icons for glowing effect and use transition property for smooth transition effect. */
+      /*facebook*/
+      .wrapper ul li:hover.facebook {
+        border: 5px solid #3b5998;
+        box-shadow: 0 0 15px #3b5998;
+        transition: all 0.5s ease;
+      }
+      
+      .wrapper ul li:hover .fa-facebook {
+        color: #3b5998;
+        text-shadow: 0 0 15px #3b5998;
+        transition: all 0.5s ease;
+      }
+      
+      /*twitter*/
+      .wrapper ul li:hover.twitter {
+        border: 5px solid #00aced;
+        box-shadow: 0 0 15px #00aced;
+        transition: all 0.5s ease;
+      }
+      
+      .wrapper ul li:hover .fa-twitter {
+        color: #00aced;
+        text-shadow: 0 0 15px #00aced;
+        transition: all 0.5s ease;
+      }
+      
+      /* instagram */
+      .wrapper ul li:hover.instagram {
+        border: 5px solid #bc2a8d;
+        box-shadow: 0 0 15px #bc2a8d;
+        transition: all 0.5s ease;
+      }
+      
+      .wrapper ul li:hover .fa-instagram {
+        color: #bc2a8d;
+        text-shadow: 0 0 15px #bc2a8d;
+        transition: all 0.5s ease;
+      }
+      
+      /* google */
+      .wrapper ul li:hover.google {
+        border: 5px solid #dd4b39;
+        box-shadow: 0 0 15px #dd4b39;
+        transition: all 0.5s ease;
+      }
+      
+      .wrapper ul li:hover .fa-google {
+        color: #dd4b39;
+        text-shadow: 0 0 15px #dd4b39;
+        transition: all 0.5s ease;
+      }
+      
+      /* whatsapp */
+      .wrapper ul li:hover.whatsapp {
+        border: 5px solid #4dc247;
+        box-shadow: 0 0 15px #4dc247;
+        transition: all 0.5s ease;
+      }
+      
+      .wrapper ul li:hover .fa-whatsapp {
+        color: #4dc247;
+        text-shadow: 0 0 15px #4dc247;
+        transition: all 0.5s ease;
+      }
+      
+      
+      /* media queries */
+      
+      @media screen and (max-width: 640px){
+        .wrapper {
+            width: 350px;
+        }
+        .wrapper ul li{
+            margin-top: 10px;
+        }
+        .wrapper ul li.google{
+            margin-left: 60px;
+        }
+      }
+      
+      
+      @media screen and (max-width: 340px){
+        .wrapper {
+            width: 150px;
+        }
+        .wrapper ul li{
+            margin:15px;
+        }
+        .wrapper ul li.google{
+            margin-left: 15px;
+        }
+      }   
+  }
+}
+
+
+
+
+
+
+@import "media";/* файл для медиа запросов */
